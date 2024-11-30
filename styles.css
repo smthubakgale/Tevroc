@@ -15,6 +15,18 @@ body {
   padding: 0;
 }
 
+#home {
+  background-image: url('https://unsplash.com/photos/5L4eF4F4a7Y');
+}
+
+#about {
+  background-image: url('https://pexels.com/photo/person-sitting-in-front-of-computer-842548/');
+}
+
+#portfolio {
+  background-image: url('https://pixabay.com/photos/laptop-computer-keyboard-work-1241512/');
+}
+
 /* Hero Section */
 
 #home {
