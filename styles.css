@@ -27,6 +27,7 @@ body {
   color: #fff;
   position: relative;
   animation: backgroundZoom 10s ease-in-out infinite;
+  background-color: #4567b7; /* Blueish background color */
 }
 
 #home::before {
@@ -50,6 +51,7 @@ body {
 .hero-text h1 {
   font-size: 48px;
   margin-bottom: 20px;
+  color: #87ceeb; /* Blueish text color */
 }
 
 /* Navigation */
@@ -59,6 +61,9 @@ nav {
   top: 20px;
   right: 20px;
   z-index: 1;
+  background-color: #2f4f7f; /* Blueish navigation background color */
+  padding: 10px;
+  border-radius: 5px;
 }
 
 nav ul {
@@ -90,11 +95,12 @@ nav a.active {
 
 #about {
   padding: 100px;
-  background-color: #f9f9f9;
+  background-color: #87ceeb; /* Blueish background color */
 }
 
 #about h2 {
   margin-top: 0;
+  color: #2f4f7f; /* Blueish text color */
 }
 
 #about p {
@@ -105,11 +111,12 @@ nav a.active {
 
 #services {
   padding: 100px;
-  background-color: #fff;
+  background-color: #4567b7; /* Blueish background color */
 }
 
 #services h2 {
   margin-top: 0;
+  color: #fff;
 }
 
 #services .service {
@@ -120,11 +127,12 @@ nav a.active {
 
 #portfolio {
   padding: 100px;
-  background-color: #f9f9f9;
+  background-color: #87ceeb; /* Blueish background color */
 }
 
 #portfolio h2 {
   margin-top: 0;
+  color: #2f4f7f; /* Blueish text color */
 }
 
 #portfolio .project {
@@ -135,11 +143,12 @@ nav a.active {
 
 #contact {
   padding: 100px;
-  background-color: #fff;
+  background-color: #4567b7; /* Blueish background color */
 }
 
 #contact h2 {
   margin-top: 0;
+  color: #fff;
 }
 
 #contact form {
@@ -155,7 +164,7 @@ nav a.active {
 }
 
 #contact button[type="submit"] {
-  background-color: #4CAF50;
+  background-color: #2f4f7f; /* Blueish button background color */
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -164,13 +173,13 @@ nav a.active {
 }
 
 #contact button[type="submit"]:hover {
-  background-color: #3e8e41;
+  background-color: #1a3d5d;
 }
 
 /* Footer */
 
 footer {
-  background-color: #333;
+  background-color: #2f4f7f; /* Blueish footer background color */
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -334,3 +343,42 @@ input[type="text"], input[type="email"], textarea {
   color: #ccc;
 }
 
+/* Blueish Color Scheme */
+
+:root {
+  --primary-color: #2f4f7f;
+  --secondary-color: #87ceeb;
+  --background-color: #4567b7;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+nav {
+  background-color: var(--primary-color);
+}
+
+#home {
+  background-color: var(--background-color);
+}
+
+#about {
+  background-color: var(--secondary-color);
+}
+
+#services {
+  background-color: var(--background-color);
+}
+
+#portfolio {
+  background-color: var(--secondary-color);
+}
+
+#contact {
+  background-color: var(--background-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+}
