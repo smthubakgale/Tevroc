@@ -39,6 +39,33 @@ header nav a {
     text-decoration: none;
 }
 
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+/* Active section highlight */
+
+nav a.active {
+  color: #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+/* Scrollspy for active section */
+
+#home, #about, #services, #portfolio, #contact {
+  scroll-margin-top: 100px; /* Adjust for fixed navbar */
+}
+
 /* Hero Styles */
 
 #home {
