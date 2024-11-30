@@ -42,7 +42,7 @@ header nav a {
 /* Hero Styles */
 
 #home {
-  background-image: url('banner.jpeg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('banner-image.jpg');
   background-size: 100% 100%;
   height: 100vh;
   display: flex;
