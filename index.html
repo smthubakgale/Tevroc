@@ -1,273 +1,166 @@
-/* Global Styles */
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
-}
-
-/* Navigation */
-
-.top-nav {
-    background-color: #ffa07a; /* Orange-ish background */
-    padding: 1em;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.top-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.top-nav li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.top-nav a {
-    color: #fff; /* White text */
-    text-decoration: none;
-}
-
-.top-nav a:hover {
-    color: #ccc; /* Light gray text on hover */
-}
-
-/* Side Menu */
-
-.side-nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 250px;
-    height: 100vh;
-    background-color: #f9f9f9;
-    padding: 1em;
-    overflow-y: auto;
-    box-shadow: 2px 0 4px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-    flex-shrink: 0; /* Prevent aside from shrinking */
-}
-
-.side-nav .docs-nav {
-    padding: 0;
-}
-
-.side-nav .docs-nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
-
-.side-nav .docs-nav li {
-    margin-bottom: 10px;
-}
-
-.side-nav .docs-nav a {
-    color: #333;
-    text-decoration: none;
-}
-
-.side-nav .docs-nav a:hover {
-    color: #ffa07a;
-}
-
-.side-nav .dropdown {
-    margin-bottom: 10px;
-}
-
-.side-nav .dropdown ul {
-    background-color: #fff;
-    padding: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-}
-
-.side-nav .dropdown ul li {
-    margin-bottom: 10px;
-}
-
-.side-nav .dropdown ul li:last-child {
-    margin-bottom: 0;
-}
-
-.side-nav .active {
-    background-color: #ffa07a;
-    color: #fff;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-/* Main Content */
-
-main {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-.main-content {
-    margin-left: 0;
-    padding: 2em;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-    flex-grow: 1; /* Make main content take up remaining space */
-}
-
-.section {
-    display: none;
-    padding: 2em;
-    background-color: #fff;
-    border-bottom: 1px solid #ddd;
-}
-
-.section.active {
-    display: block;
-}
-
-.section h1 {
-    color: #ffa07a;
-}
-
-.section p {
-    margin-bottom: 20px;
-}
-
-.section ul {
-    list-style: disc;
-    margin-left: 20px;
-}
-
-.section ol {
-    list-style: decimal;
-    margin-left: 20px;
-}
-
-/* Additional Styles */
-
-.hidden {
-    display: none;
-}
-
-.right-align {
-    float: right;
-}
-
-.dropdown {
-    position: relative;
-}
-
-.dropdown ul {
-    position: absolute;
-    background-color: #f9f9f9;
-    padding: 10px;
-    border: 1px solid #ddd;
-    display: none;
-}
-
-.dropdown:hover ul {
-    display: block;
-}
-
-.dropdown ul li {
-    display: block;
-    margin-bottom: 10px;
-}
-
-pre {
-    background-color: #f9f9f9;
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-pre code {
-    color: #666;
-}
-
-/* Responsive Design */
-
-@media (max-width: 768px) {
-    main {
-        flex-direction: column; /* Stack aside and main content on smaller screens */
-    }
-
-    .side-nav {
-        flex-shrink: 1; /* Allow aside to shrink on smaller screens */
-        width: 100%; /* Make aside full-width on smaller screens */
-    }
-
-        .main-content {
-        flex-grow: 1; /* Make main content take up remaining space on smaller screens */
-        margin-top: 20px; /* Add margin between aside and main content on smaller screens */
-    }
-}
-
-@media (max-width: 480px) {
-    .top-nav {
-        padding: 0.2em;
-    }
-
-    .top-nav li {
-        margin-right: 5px;
-    }
-
-    .side-nav {
-        width: 100%;
-        padding: 0.5em;
-    }
-
-    .main-content {
-        padding: 1em;
-    }
-
-    .section {
-        padding: 1em;
-    }
-}
-
-/* Additional Media Queries */
-
-@media (max-width: 320px) {
-    .top-nav {
-        font-size: 12px;
-    }
-
-    .side-nav {
-        font-size: 12px;
-    }
-
-    .main-content {
-        font-size: 12px;
-    }
-}
-
-/* Print Styles */
-
-@media print {
-    .top-nav {
-        display: none;
-    }
-
-    .side-nav {
-        display: none;
-    }
-
-    .main-content {
-        margin-left: 0;
-        padding: 0;
-    }
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pycon Documentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="top-nav">
+        <nav>
+            <ul>
+                <li class="logo">
+                    <a href="#">
+                        <img src="logo.png" alt="Pycon Logo" width="40" height="40">
+                    </a>
+                </li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#pricing" class="nav-link">Pricing</a></li>
+                <li class="right-align">
+                    <a href="#sign-up" class="nav-link">Sign Up</a>
+                    <a href="#sign-in" class="nav-link">Sign In</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <aside class="side-nav">
+            <nav class="docs-nav">
+                <ul>
+                    <li><a href="#introduction" class="nav-link">Introduction</a></li>
+                    <li class="dropdown">
+                        <a href="#user-guide" class="nav-link">User Guide</a>
+                        <ul class="sub-nav">
+                            <li><a href="#installation">Installation</a></li>
+                            <li><a href="#upgrades">Upgrades</a></li>
+                            <li><a href="#configuration">Configuration</a></li>
+                            <li><a href="#troubleshooting">Troubleshooting</a></li>
+                            <li><a href="#best-practices">Best Practices</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#tutorials" class="nav-link">Tutorials</a>
+                        <ul class="sub-nav">
+                            <li><a href="#manage-reference-projects">Manage Reference Projects</a></li>
+                            <li><a href="#organize-icon-collections">Organize Icon Collections</a></li>
+                            <li><a href="#create-svg-sprite">Create SVG Sprite</a></li>
+                            <li><a href="#rename-icons">Rename Icons</a></li>
+                            <li><a href="#create-icon-project">Create Icon Project</a></li>
+                            <li><a href="#search-and-add-icons">Search and Add Icons</a></li>
+                            <li><a href="#track-icon-usage">Track Icon Usage</a></li>
+                            <li><a href="#generate-icon-css">Generate Icon CSS</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#api-reference" class="nav-link">API Reference</a></li>
+                </ul>
+            </nav>
+        </aside>
+        <div class="main-content">
+            <section id="home" class="section active">
+                <h1>Home</h1>
+                <p>Welcome to Pycon homepage.</p>
+            </section>
+            <section id="pricing" class="section hidden">
+                <h1>Pricing</h1>
+                <p>Pycon pricing plans.</p>
+                <ul>
+                    <li>Plan 1: $9.99/month</li>
+                    <li>Plan 2: $19.99/month</li>
+                    <li>Plan 3: $29.99/month</li>
+                </ul>
+            </section>
+            <section id="sign-up" class="section hidden">
+                <h1>Sign Up</h1>
+                <p>Create a Pycon account.</p>
+                <form>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button>Sign Up</button>
+                </form>
+            </section>
+            <section id="sign-in" class="section hidden">
+                <h1>Sign In</h1>
+                <p>Log in to your Pycon account.</p>
+                <form>
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <button>Sign In</button>
+                </form>
+            </section>
+            <section id="introduction" class="section hidden">
+                <h1>Introduction</h1>
+                <p>Welcome to Pycon introduction.</p>
+            </section>
+            <section id="user-guide" class="section hidden">
+                <h1>User Guide</h1>
+                <p>Pycon user guide content.</p>
+            </section>
+                        <section id="installation" class="section hidden">
+                <h1>Installation</h1>
+                <p>Pycon installation guide.</p>
+                <ol>
+                    <li>Step 1: Download Pycon</li>
+                    <li>Step 2: Install Pycon</li>
+                    <li>Step 3: Configure Pycon</li>
+                </ol>
+            </section>
+            <section id="upgrades" class="section hidden">
+                <h1>Upgrades</h1>
+                <p>Pycon upgrades guide.</p>
+                <ol>
+                    <li>Step 1: Backup data</li>
+                    <li>Step 2: Update Pycon</li>
+                    <li>Step 3: Verify update</li>
+                </ol>
+            </section>
+            <section id="configuration" class="section hidden">
+                <h1>Configuration</h1>
+                <p>Pycon configuration guide.</p>
+                <ol>
+                    <li>Step 1: Set up settings</li>
+                    <li>Step 2: Configure options</li>
+                    <li>Step 3: Save changes</li>
+                </ol>
+            </section>
+            <section id="troubleshooting" class="section hidden">
+                <h1>Troubleshooting</h1>
+                <p>Pycon troubleshooting guide.</p>
+                <ol>
+                    <li>Common issues</li>
+                    <li>Resolution steps</li>
+                    <li>Support resources</li>
+                </ol>
+            </section>
+            <section id="best-practices" class="section hidden">
+                <h1>Best Practices</h1>
+                <p>Pycon best practices guide.</p>
+                <ol>
+                    <li>Optimize performance</li>
+                    <li>Improve security</li>
+                    <li>Enhance user experience</li>
+                </ol>
+            </section>
+            <section id="tutorials" class="section hidden">
+                <h1>Tutorials</h1>
+                <p>Pycon tutorials guide.</p>
+                <ol>
+                    <li>Tutorial 1: Getting started</li>
+                    <li>Tutorial 2: Advanced features</li>
+                    <li>Tutorial 3: Expert techniques</li>
+                </ol>
+            </section>
+            <section id="api-reference" class="section hidden">
+                <h1>API Reference</h1>
+                <p>Pycon API reference guide.</p>
+                <ol>
+                    <li>API endpoints</li>
+                    <li>Request methods</li>
+                    <li>Response formats</li>
+                </ol>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
