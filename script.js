@@ -1,3 +1,7 @@
+(function() {
+    emailjs.init('service_44zo6pj');
+  })();
+
 // Contact Form JavaScript Code
 
 const form = document.getElementById('contact-form');
