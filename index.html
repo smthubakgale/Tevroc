@@ -1,180 +1,538 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pycon Documentation</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <header class="top-nav">
-        <nav>
-            <ul>
-                <li class="home-link">
-                    <a href="#home" class="nav-link">Home</a>
-                </li>
-                <li class="pricing-link">
-                    <a href="#pricing" class="nav-link">Pricing</a>
-                </li>
-                <li class="logo">
-                    <a href="#">
-                        <img src="logo.png" alt="Pycon Logo" width="40" height="40">
-                    </a>
-                </li>
-                <li class="sign-up-link">
-                    <a href="#sign-up" class="nav-link">Sign Up</a>
-                </li>
-                <li class="sign-in-link">
-                    <a href="#sign-in" class="nav-link">Sign In</a>
-                </li>
-                <li style="float: right;">
-                    <button class="expand-btn">Expand Side Nav</button>
-                </li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <aside class="side-nav minimized">
-            <button class="minimize-btn">Minimize</button>
-            <nav class="docs-nav">
-                <ul>
-                    <li><a href="#introduction" class="nav-link">Introduction</a></li>
-                    <li class="dropdown">
-                        <a href="#user-guide" class="nav-link">User Guide</a>
-                        <ul class="sub-nav">
-                            <li><a href="#installation">Installation</a></li>
-                            <li><a href="#upgrades">Upgrades</a></li>
-                            <li><a href="#configuration">Configuration</a></li>
-                            <li><a href="#troubleshooting">Troubleshooting</a></li>
-                            <li><a href="#best-practices">Best Practices</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#tutorials" class="nav-link">Tutorials</a>
-                        <ul class="sub-nav">
-                            <li><a href="#manage-reference-projects">Manage Reference Projects</a></li>
-                            <li><a href="#organize-icon-collections">Organize Icon Collections</a></li>
-                            <li><a href="#create-svg-sprite">Create SVG Sprite</a></li>
-                            <li><a href="#rename-icons">Rename Icons</a></li>
-                            <li><a href="#create-icon-project">Create Icon Project</a></li>
-                            <li><a href="#search-and-add-icons">Search and Add Icons</a></li>
-                            <li><a href="#track-icon-usage">Track Icon Usage</a></li>
-                            <li><a href="#generate-icon-css">Generate Icon CSS</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#api-reference" class="nav-link">API Reference</a></li>
-                </ul>
-            </nav>
-        </aside>
-        <div class="main-content">
-            <section id="home" class="section active">
-                <h1>Home</h1>
-                <p>Welcome to Pycon homepage.</p>
-            </section>
-            <section id="pricing" class="section hidden">
-                <h1>Pricing</h1>
-                <p>Pycon pricing plans.</p>
-                <ul>
-                    <li>Plan 1: $9.99/month</li>
-                    <li>Plan 2: $19.99/month</li>
-                    <li>Plan 3: $29.99/month</li>
-                </ul>
-            </section>
-            <section id="sign-up" class="section hidden">
-                <h1>Sign Up</h1>
-                <p>Create a Pycon account.</p>
-                <form>
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Password">
-                    <button>Sign Up</button>
-                </form>
-            </section>
-            <section id="sign-in" class="section hidden">
-                <h1>Sign In</h1>
-                <p>Log in to your Pycon account.</p>
-                <form>
-                    <input type="email" placeholder="Email">
-                    <input type="password" placeholder="Password">
-                    <button>Sign In</button>
-                </form>
-            </section>
-                       <section id="introduction" class="section hidden">
-                <h1>Introduction</h1>
-                <p>Welcome to Pycon introduction.</p>
-            </section>
-            <section id="user-guide" class="section hidden">
-                <h1>User Guide</h1>
-                <p>Pycon user guide content.</p>
-            </section>
-            <section id="installation" class="section hidden">
-                <h1>Installation</h1>
-                <p>Pycon installation guide.</p>
-                <ol>
-                    <li>Step 1: Download Pycon</li>
-                    <li>Step 2: Install Pycon</li>
-                    <li>Step 3: Configure Pycon</li>
-                </ol>
-            </section>
-            <section id="upgrades" class="section hidden">
-                <h1>Upgrades</h1>
-                <p>Pycon upgrades guide.</p>
-                <ol>
-                    <li>Step 1: Backup data</li>
-                    <li>Step 2: Update Pycon</li>
-                    <li>Step 3: Verify update</li>
-                </ol>
-            </section>
-            <section id="configuration" class="section hidden">
-                <h1>Configuration</h1>
-                <p>Pycon configuration guide.</p>
-                <ol>
-                    <li>Step 1: Set up settings</li>
-                    <li>Step 2: Configure options</li>
-                    <li>Step 3: Save changes</li>
-                </ol>
-            </section>
-            <section id="troubleshooting" class="section hidden">
-                <h1>Troubleshooting</h1>
-                <p>Pycon troubleshooting guide.</p>
-                <ol>
-                    <li>Common issues</li>
-                    <li>Resolution steps</li>
-                    <li>Support resources</li>
-                </ol>
-            </section>
-            <section id="best-practices" class="section hidden">
-                <h1>Best Practices</h1>
-                <p>Pycon best practices guide.</p>
-                <ol>
-                    <li>Optimize performance</li>
-                    <li>Improve security</li>
-                    <li>Enhance user experience</li>
-                </ol>
-            </section>
-            <section id="tutorials" class="section hidden">
-                <h1>Tutorials</h1>
-                <p>Pycon tutorials guide.</p>
-                <ol>
-                    <li>Tutorial 1: Getting started</li>
-                    <li>Tutorial 2: Advanced features</li>
-                    <li>Tutorial 3: Expert techniques</li>
-                </ol>
-            </section>
-            <section id="api-reference" class="section hidden">
-                <h1>API Reference</h1>
-                <p>Pycon API reference guide.</p>
-                <ol>
-                    <li>API endpoints</li>
-                    <li>Request methods</li>
-                    <li>Response formats</li>
-                </ol>
-            </section>
-        </div>
-    </main>
-    <footer>
-        <p>&copy; 2024 Pycon. All rights reserved.</p>
-        <p><a href="#">Contact Us</a> | <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
-    </footer>
-    <script src="script.js"></script>
-</body>
-</html>
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+#home {
+  background-image: url('https://unsplash.com/photos/5L4eF4F4a7Y');
+}
+
+#about {
+  background-image: url('https://pexels.com/photo/person-sitting-in-front-of-computer-842548/');
+}
+
+#portfolio {
+  background-image: url('https://pixabay.com/photos/laptop-computer-keyboard-work-1241512/');
+}
+
+/* Hero Section */
+
+#home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('banner-image.jpg');
+  background-size: 100% 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  position: relative;
+  animation: backgroundZoom 10s ease-in-out infinite;
+  background-color: #4567b7; /* Blueish background color */
+}
+
+#home::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+/* Hero Text */
+
+.hero-text {
+  text-align: center;
+  animation: fadeIn 2s ease-in-out;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #87ceeb; /* Blueish text color */
+}
+
+/* Navigation */
+
+nav {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1;
+  background-color: #2f4f7f; /* Blueish navigation background color */
+  padding: 10px;
+  border-radius: 5px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+  animation: slideIn 1s ease-in-out;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+nav a:hover {
+  color: #ccc;
+}
+
+nav a.active {
+  color: #ccc;
+  border-bottom: 2px solid #ccc;
+}
+
+.discover-button {
+  background-color: #4CAF50; /* Green background */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Larger padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 16px; /* Larger font size */
+  font-weight: bold; /* Bold font */
+}
+
+.discover-button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+}
+
+.discover-button:focus {
+  outline: none; /* Remove outline on focus */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow on focus */
+}
+
+/* About Section */
+
+#about {
+  padding: 100px;
+  background-color: #87ceeb; /* Blueish background color */
+}
+
+#about h2 {
+  margin-top: 0;
+  color: #2f4f7f; /* Blueish text color */
+}
+
+#about p {
+  margin-bottom: 20px;
+}
+
+/* Services Section */
+
+#services {
+  padding: 100px;
+  background-color: #4567b7; /* Blueish background color */
+}
+
+#services h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+#services .service {
+  margin-bottom: 20px;
+}
+
+/* Portfolio Section */
+
+#portfolio h2 {
+  margin-top: 0;
+  color: #2f4f7f; /* Blueish text color */
+}
+
+#portfolio .project {
+  margin-bottom: 20px;
+}
+#portfolio {
+  background-color: #f4f4f4;
+  padding: 20px;
+}
+
+.project {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.project h3 {
+  color: #333;
+}
+
+.project p {
+  color: #666;
+}
+
+.project ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.project li {
+  margin-bottom: 10px;
+}
+
+.project li:before {
+  content: "\2022";
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.tags {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tags li {
+  display: inline-block;
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.tags li:hover {
+  background-color: #3e8e41;
+}
+.screenshot{
+  width:80%;
+  max-width:80%;
+screenshots {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+screenshots img {
+  width: 250px; /* Reduced width */
+  max-width:250px ;
+  margin: 5px; /* Reduced margin */
+  border-radius: 5px; /* Reduced border radius */
+  box-shadow: none; /* Removed box shadow */
+  opacity: 0.8; /* Added opacity for subtle appearance */
+}
+
+screenshots img:hover {
+  opacity: 1; /* Increased opacity on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added subtle box shadow */
+}
+
+.features {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.features h2 {
+  color: #333;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.features li {
+  margin-bottom: 10px;
+}
+
+.features li:before {
+  content: "\2022";
+  font-size: 1.5em;
+  margin-right: 10px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.feature {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.feature h3 {
+  color: #333;
+}
+
+.feature p {
+  color: #666;
+}
+
+/* Contact Section */
+
+#contact {
+  padding: 100px;
+  background-color: #4567b7; /* Blueish background color */
+}
+
+#contact h2 {
+  margin-top: 0;
+  color: #fff;
+}
+
+#contact form {
+  margin-top: 20px;
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+#contact button[type="submit"] {
+  background-color: #2f4f7f; /* Blueish button background color */
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#contact button[type="submit"]:hover {
+  background-color: #1a3d5d;
+}
+
+/* Footer */
+
+footer {
+  background-color: #2f4f7f; /* Blueish footer background color */
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #ccc;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes backgroundZoom {
+  0% {
+    background-size: 100% 100%;
+  }
+  100% {
+    background-size: 120% 120%;
+  }
+}
+
+/* Media Queries (Responsive Design) */
+
+@media (max-width: 768px) {
+  #home {
+    height: 80vh;
+  }
+  .hero-text {
+    font-size: 24px;
+  }
+  #about, #services, #portfolio, #contact {
+    padding: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  #home {
+    height: 60vh;
+  }
+  .hero-text {
+    font-size: 18px;
+  }
+  #about, #services, #portfolio, #contact {
+    padding: 20px;
+  }
+}
+
+/* Scrollspy for Active Section */
+
+#home, #about, #services, #portfolio, #contact {
+  scroll-margin-top: 100px; /* Adjust for fixed navbar */
+}
+
+/* Smooth Scrolling */
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Additional Styles */
+
+section {
+  padding: 100px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  color: #333;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+img{
+  max-width:100%;
+  height:auto;
+}
+/* Button Styles */
+
+.button {
+  background-color: #4CAF50;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #3e8e41;
+}
+
+/* Input Styles */
+
+input[type="text"], input[type="email"], textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+}
+
+/* Footer Links */
+
+.footer-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #ccc;
+}
+
+/* Blueish Color Scheme */
+
+:root {
+  --primary-color: #2f4f7f;
+  --secondary-color: #87ceeb;
+  --background-color: #4567b7;
+}
+
+body {
+  background-color: var(--background-color);
+}
+
+nav {
+  background-color: var(--primary-color);
+}
+
+#home {
+  background-color: var(--background-color);
+}
+
+#about {
+  background-color: var(--secondary-color);
+}
+
+#services {
+  background-color: var(--background-color);
+}
+
+#portfolio {
+  background-color: white;
+}
+
+#contact {
+  background-color: var(--background-color);
+}
+
+footer {
+  background-color: var(--primary-color);
+}
