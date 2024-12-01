@@ -223,14 +223,14 @@ nav a.active {
   background-color: #3e8e41;
 }
 
-.screenshots {
+screenshots {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
 }
 
-.screenshots img {
+screenshots img {
   width: 30%; /* Reduced width */
   max-width:30%; 
   margin: 5px; /* Reduced margin */
@@ -239,7 +239,7 @@ nav a.active {
   opacity: 0.8; /* Added opacity for subtle appearance */
 }
 
-.screenshots img:hover {
+screenshots img:hover {
   opacity: 1; /* Increased opacity on hover */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added subtle box shadow */
 }
