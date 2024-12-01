@@ -227,12 +227,20 @@ nav a.active {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .screenshots img {
-  width: 30%;
-  margin: 10px;
-  border-radius: 10px;
+  width: 15%; /* Reduced width */
+  margin: 5px; /* Reduced margin */
+  border-radius: 5px; /* Reduced border radius */
+  box-shadow: none; /* Removed box shadow */
+  opacity: 0.8; /* Added opacity for subtle appearance */
+}
+
+.screenshots img:hover {
+  opacity: 1; /* Increased opacity on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added subtle box shadow */
 }
 
 .features {
