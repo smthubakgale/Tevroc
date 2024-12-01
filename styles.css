@@ -231,7 +231,8 @@ nav a.active {
 }
 
 .screenshots img {
-  width: 15%; /* Reduced width */
+  width: 200px; /* Reduced width */
+  height:!50px;
   margin: 5px; /* Reduced margin */
   border-radius: 5px; /* Reduced border radius */
   box-shadow: none; /* Removed box shadow */
@@ -441,10 +442,6 @@ a {
 
 a:hover {
   color: #23527c;
-}
-
-img { 
-  height: auto;
 }
 
 /* Button Styles */
