@@ -19,17 +19,16 @@ form.addEventListener('submit', (e) => {
     message: "hello sammy",
     from_email: "mabalane.thubakgale@gmail.com",
     reply_to: "mabalane.thubakgale@gmail.com",
-}).then(() => {
-            console.log('SUCCESS!');
-            formStatus.innerHTML = 'Message sent successfully!';
-            form.reset();
-        }, (error) => {
-            console.log('FAILED...', error);
-            formStatus.innerHTML = 'Error sending message. Please try again.';
-        });
+    }).then(() => {
+                console.log('SUCCESS!');
+                formStatus.innerHTML = 'Message sent successfully!';
+                form.reset();
+            }, (error) => {
+                console.log('FAILED...', error);
+                formStatus.innerHTML = 'Error sending message. Please try again.';
+            });
 });
 
-*/
 /*
 (function() {
     emailjs.init('OiMEAcHFuztUoVBi0');
