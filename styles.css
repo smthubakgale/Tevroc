@@ -231,8 +231,8 @@ screenshots {
 }
 
 screenshots img {
-  width: 30%; /* Reduced width */
-  max-width:30%; 
+  width: 250px; /* Reduced width */
+  max-width:250px ;
   margin: 5px; /* Reduced margin */
   border-radius: 5px; /* Reduced border radius */
   box-shadow: none; /* Removed box shadow */
