@@ -10,16 +10,24 @@
     <header class="top-nav">
         <nav>
             <ul>
-                <li class="logo">
+                <li class="left-links logo">
                     <a href="#">
                         <img src="logo.png" alt="Pycon Logo" width="40" height="40">
                     </a>
                 </li>
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#pricing" class="nav-link">Pricing</a></li>
-                <li class="right-align">
-                    <a href="#sign-up" class="nav-link">Sign Up</a>
-                    <a href="#sign-in" class="nav-link">Sign In</a>
+                <li class="left-links home-link">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="left-links pricing-link">
+                    <a href="#pricing" class="nav-link">Pricing</a>
+                </li>
+                <li class="right-links">
+                    <li class="right-align sign-up-link">
+                        <a href="#sign-up" class="nav-link">Sign Up</a>
+                    </li>
+                    <li class="right-align sign-in-link">
+                        <a href="#sign-in" class="nav-link">Sign In</a>
+                    </li>
                 </li>
             </ul>
         </nav>
@@ -92,11 +100,11 @@
                 <h1>Introduction</h1>
                 <p>Welcome to Pycon introduction.</p>
             </section>
-            <section id="user-guide" class="section hidden">
+                        <section id="user-guide" class="section hidden">
                 <h1>User Guide</h1>
                 <p>Pycon user guide content.</p>
             </section>
-                        <section id="installation" class="section hidden">
+            <section id="installation" class="section hidden">
                 <h1>Installation</h1>
                 <p>Pycon installation guide.</p>
                 <ol>
@@ -161,6 +169,10 @@
             </section>
         </div>
     </main>
+    <footer>
+        <p>&copy; 2024 Pycon. All rights reserved.</p>
+        <p><a href="#">Contact Us</a> | <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a></p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
