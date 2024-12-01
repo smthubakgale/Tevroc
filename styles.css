@@ -225,6 +225,7 @@ nav a.active {
 .screenshot{
   width:80%;
   max-width:80%;
+}
 screenshots {
   display: flex;
   flex-wrap: wrap;
@@ -233,8 +234,8 @@ screenshots {
 }
 
 screenshots img {
-  width: 250px; /* Reduced width */
-  max-width:250px ;
+  width: 45%; /* Reduced width */
+  max-width:45% ;
   margin: 5px; /* Reduced margin */
   border-radius: 5px; /* Reduced border radius */
   box-shadow: none; /* Removed box shadow */
