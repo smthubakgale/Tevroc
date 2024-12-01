@@ -28,7 +28,7 @@ form.addEventListener('submit', (e) => {
             formStatus.innerHTML = 'Error sending message. Please try again.';
         });
 
-
+*/
 /*
 (function() {
     emailjs.init('OiMEAcHFuztUoVBi0');
