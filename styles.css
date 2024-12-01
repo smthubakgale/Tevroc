@@ -231,8 +231,8 @@ nav a.active {
 }
 
 .screenshots img {
-  width: 200px; /* Reduced width */
-  height:!50px;
+  width: 30%; /* Reduced width */
+  max-width:30%; 
   margin: 5px; /* Reduced margin */
   border-radius: 5px; /* Reduced border radius */
   box-shadow: none; /* Removed box shadow */
