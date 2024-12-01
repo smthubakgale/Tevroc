@@ -27,6 +27,7 @@ form.addEventListener('submit', (e) => {
             console.log('FAILED...', error);
             formStatus.innerHTML = 'Error sending message. Please try again.';
         });
+});
 
 */
 /*
