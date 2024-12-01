@@ -1,538 +1,213 @@
-/* Global Styles */
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f4f4f4;
-  margin: 0;
-  padding: 0;
-}
-
-#home {
-  background-image: url('https://unsplash.com/photos/5L4eF4F4a7Y');
-}
-
-#about {
-  background-image: url('https://pexels.com/photo/person-sitting-in-front-of-computer-842548/');
-}
-
-#portfolio {
-  background-image: url('https://pixabay.com/photos/laptop-computer-keyboard-work-1241512/');
-}
-
-/* Hero Section */
-
-#home {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('banner-image.jpg');
-  background-size: 100% 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  position: relative;
-  animation: backgroundZoom 10s ease-in-out infinite;
-  background-color: #4567b7; /* Blueish background color */
-}
-
-#home::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: -1;
-}
-
-/* Hero Text */
-
-.hero-text {
-  text-align: center;
-  animation: fadeIn 2s ease-in-out;
-}
-
-.hero-text h1 {
-  font-size: 48px;
-  margin-bottom: 20px;
-  color: #87ceeb; /* Blueish text color */
-}
-
-/* Navigation */
-
-nav {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1;
-  background-color: #2f4f7f; /* Blueish navigation background color */
-  padding: 10px;
-  border-radius: 5px;
-}
-
-nav ul {
-  list-style: none;
-}
-
-nav ul li {
-  display: inline-block;
-  margin-right: 20px;
-  animation: slideIn 1s ease-in-out;
-}
-
-nav a {
-  color: #fff;
-  text-decoration: none;
-  transition: color 0.2s ease;
-}
-
-nav a:hover {
-  color: #ccc;
-}
-
-nav a.active {
-  color: #ccc;
-  border-bottom: 2px solid #ccc;
-}
-
-.discover-button {
-  background-color: #4CAF50; /* Green background */
-  color: #fff; /* White text */
-  padding: 10px 20px; /* Larger padding */
-  border: none; /* No border */
-  border-radius: 5px; /* Rounded corners */
-  cursor: pointer; /* Pointer cursor */
-  font-size: 16px; /* Larger font size */
-  font-weight: bold; /* Bold font */
-}
-
-.discover-button:hover {
-  background-color: #3e8e41; /* Darker green on hover */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
-}
-
-.discover-button:focus {
-  outline: none; /* Remove outline on focus */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow on focus */
-}
-
-/* About Section */
-
-#about {
-  padding: 100px;
-  background-color: #87ceeb; /* Blueish background color */
-}
-
-#about h2 {
-  margin-top: 0;
-  color: #2f4f7f; /* Blueish text color */
-}
-
-#about p {
-  margin-bottom: 20px;
-}
-
-/* Services Section */
-
-#services {
-  padding: 100px;
-  background-color: #4567b7; /* Blueish background color */
-}
-
-#services h2 {
-  margin-top: 0;
-  color: #fff;
-}
-
-#services .service {
-  margin-bottom: 20px;
-}
-
-/* Portfolio Section */
-
-#portfolio h2 {
-  margin-top: 0;
-  color: #2f4f7f; /* Blueish text color */
-}
-
-#portfolio .project {
-  margin-bottom: 20px;
-}
-#portfolio {
-  background-color: #f4f4f4;
-  padding: 20px;
-}
-
-.project {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-  padding: 20px;
-}
-
-.project h3 {
-  color: #333;
-}
-
-.project p {
-  color: #666;
-}
-
-.project ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.project li {
-  margin-bottom: 10px;
-}
-
-.project li:before {
-  content: "\2022";
-  font-size: 1.5em;
-  margin-right: 10px;
-}
-
-.tags {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.tags li {
-  display: inline-block;
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 5px 10px;
-  border-radius: 5px;
-  margin-right: 10px;
-}
-
-.tags li:hover {
-  background-color: #3e8e41;
-}
-.screenshot{
-  width:80%;
-  max-width:80%;
-screenshots {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin-top: 20px;
-}
-
-screenshots img {
-  width: 250px; /* Reduced width */
-  max-width:250px ;
-  margin: 5px; /* Reduced margin */
-  border-radius: 5px; /* Reduced border radius */
-  box-shadow: none; /* Removed box shadow */
-  opacity: 0.8; /* Added opacity for subtle appearance */
-}
-
-screenshots img:hover {
-  opacity: 1; /* Increased opacity on hover */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Added subtle box shadow */
-}
-
-.features {
-  background-color: #f4f4f4;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.features h2 {
-  color: #333;
-}
-
-.features ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.features li {
-  margin-bottom: 10px;
-}
-
-.features li:before {
-  content: "\2022";
-  font-size: 1.5em;
-  margin-right: 10px;
-}
-
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
-}
-
-.feature {
-  background-color: #fff;
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
-}
-
-.feature h3 {
-  color: #333;
-}
-
-.feature p {
-  color: #666;
-}
-
-/* Contact Section */
-
-#contact {
-  padding: 100px;
-  background-color: #4567b7; /* Blueish background color */
-}
-
-#contact h2 {
-  margin-top: 0;
-  color: #fff;
-}
-
-#contact form {
-  margin-top: 20px;
-}
-
-#contact input, #contact textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  border-bottom: 1px solid #ccc;
-}
-
-#contact button[type="submit"] {
-  background-color: #2f4f7f; /* Blueish button background color */
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-#contact button[type="submit"]:hover {
-  background-color: #1a3d5d;
-}
-
-/* Footer */
-
-footer {
-  background-color: #2f4f7f; /* Blueish footer background color */
-  color: #fff;
-  padding: 20px;
-  text-align: center;
-}
-
-footer p {
-  margin-bottom: 10px;
-}
-
-footer a {
-  color: #fff;
-  text-decoration: none;
-}
-
-footer a:hover {
-  color: #ccc;
-}
-
-/* Animations */
-
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-@keyframes slideIn {
-  0% {
-    transform: translateY(-20px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes backgroundZoom {
-  0% {
-    background-size: 100% 100%;
-  }
-  100% {
-    background-size: 120% 120%;
-  }
-}
-
-/* Media Queries (Responsive Design) */
-
-@media (max-width: 768px) {
-  #home {
-    height: 80vh;
-  }
-  .hero-text {
-    font-size: 24px;
-  }
-  #about, #services, #portfolio, #contact {
-    padding: 50px;
-  }
-}
-
-@media (max-width: 480px) {
-  #home {
-    height: 60vh;
-  }
-  .hero-text {
-    font-size: 18px;
-  }
-  #about, #services, #portfolio, #contact {
-    padding: 20px;
-  }
-}
-
-/* Scrollspy for Active Section */
-
-#home, #about, #services, #portfolio, #contact {
-  scroll-margin-top: 100px; /* Adjust for fixed navbar */
-}
-
-/* Smooth Scrolling */
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* Additional Styles */
-
-section {
-  padding: 100px;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  color: #333;
-}
-
-p {
-  margin-bottom: 20px;
-}
-
-a {
-  text-decoration: none;
-  color: #337ab7;
-}
-
-a:hover {
-  color: #23527c;
-}
-
-img{
-  max-width:100%;
-  height:auto;
-}
-/* Button Styles */
-
-.button {
-  background-color: #4CAF50;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-}
-
-.button:hover {
-  background-color: #3e8e41;
-}
-
-/* Input Styles */
-
-input[type="text"], input[type="email"], textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: none;
-  border-bottom: 1px solid #ccc;
-}
-
-/* Footer Links */
-
-.footer-links {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.footer-links li {
-  display: inline-block;
-  margin-right: 20px;
-}
-
-.footer-links a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.footer-links a:hover {
-  color: #ccc;
-}
-
-/* Blueish Color Scheme */
-
-:root {
-  --primary-color: #2f4f7f;
-  --secondary-color: #87ceeb;
-  --background-color: #4567b7;
-}
-
-body {
-  background-color: var(--background-color);
-}
-
-nav {
-  background-color: var(--primary-color);
-}
-
-#home {
-  background-color: var(--background-color);
-}
-
-#about {
-  background-color: var(--secondary-color);
-}
-
-#services {
-  background-color: var(--background-color);
-}
-
-#portfolio {
-  background-color: white;
-}
-
-#contact {
-  background-color: var(--background-color);
-}
-
-footer {
-  background-color: var(--primary-color);
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Other meta tags -->
+    <link rel="icon" href="logo.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tevroc Trading</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="home">
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="hero-text">
+            <!-- Hero section content -->
+            <h1>Welcome to Our Tevroc Trading</h1>
+            <p>We design and develop innovative digital solutions for businesses.</p>
+            <button class="discover-button" >Discover More</button>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service">
+                <h3>Web Application Development</h3>
+                <p>We build scalable and secure web applications tailored to your business needs.</p>
+            </div>
+            <div class="service">
+                <h3>Mobile App Development</h3>
+                <p>We design and develop native and cross-platform mobile applications for Android and iOS devices.</p>
+            </div>
+            <div class="service">
+                <h3>Desktop Application Development</h3>
+                <p>We create custom desktop applications for Windows, macOS, and Linux platforms.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+
+    <section id="portfolio">
+        <h2>Our Portfolio</h2>
+        <div class="portfolio-container">
+            <!-- Project 1: Pycon Desktop App -->
+            <div class="project">
+                <img class="screenshot" src="portfolio/pycon/pycon-screenshot.png" alt="Pycon Screenshot">
+                <h3>Pycon</h3>
+                <p>Pycon is a Node.js desktop application built with Electron, enabling efficient conference management. It utilizes Express for robust routing and SQLite for reliable data storage.</p>
+                <ul class="tags">
+                  <li>Node.js</li>
+                  <li>Electron</li>
+                  <li>Express</li>
+                  <li>SQLite</li>
+                  <li>Desktop Application</li>
+                  <li>Conference Management</li>
+                </ul>
+                <h4>Features</h4>
+                <ul>
+                  <li>Keep track of reference projects</li>
+                  <li>Create reference project categories</li>
+                  <li>Upload icon collections for those categories</li>
+                  <li>Convert individual SVG icons into a sprite or a single SVG collection file</li>
+                  <li>Rename or remove collection icons</li>
+                  <li>Create your own icon project</li>
+                  <li>Search for icons from reference projects</li>
+                  <li>Add icons to your own projects</li>
+                  <li>Keep track of these actions</li>
+                  <li>Generate a single CSS file containing the SVG icon collection</li>
+                </ul>
+                <h4>Technology Stack</h4>
+                <ul>
+                  <li>Node.js (runtime environment)</li>
+                  <li>Electron (desktop framework)</li>
+                  <li>Express (web framework)</li>
+                  <li>SQLite (database management)</li>
+                  <li>HTML/CSS/JavaScript (frontend)</li>
+                  <li>SVG (icon graphics)</li>
+                </ul>
+                <h4>Screenshots</h4>
+                <screenshots>
+                    <img src="portfolio/pycon/pycon-screenshot-1.png" alt="Pycon Screenshot 1">
+                    <img src="portfolio/pycon/pycon-screenshot-2.png" alt="Pycon Screenshot 2">
+                    <img src="portfolio/pycon/pycon-screenshot-3.png" alt="Pycon Screenshot 3">
+                </screenshots>screenshots>
+                <h4>Demo</h4>
+                <a href="https://pycon-demo.herokuapp.com/" target="_blank">Live Demo</a>
+                <a href="https://github.com/smthubakgale/Pycon/releases/tag/v2.0" target="_blank">View Release Notes</a>
+                <a href="https://github.com/smthubakgale/Pycon" target="_blank">GitHub Repository</a>
+              </div>
+    
+            <!-- Project 2: Mobile App -->
+            <div class="project">
+                <img src="project2.jpg" alt="Mobile App">
+                <h3>TaskMaster</h3>
+                <p>Designed and developed a task management mobile app for Android and iOS devices.</p>
+                <ul>
+                    <li>Java</li>
+                    <li>Swift</li>
+                    <li>Android Studio</li>
+                    <li>Xcode</li>
+                    <li>Firebase</li>
+                </ul>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+    
+            <!-- Project 3: Web Application -->
+            <div class="project">
+                <img src="project3.jpg" alt="Web Application">
+                <h3>Blogify</h3>
+                <p>Built a web application for bloggers to create, edit, and publish articles.</p>
+                <ul>
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>React</li>
+                    <li>Node.js</li>
+                    <li>MongoDB</li>
+                </ul>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+    
+            <!-- Project 4: Desktop Application -->
+            <div class="project">
+                <img src="project4.jpg" alt="Desktop Application">
+                <h3>PhotoEditor</h3>
+                <p>Developed a desktop application for photo editing.</p>
+                <ul>
+                    <li>C#</li>
+                    <li>Windows Forms</li>
+                    <li>.NET Framework</li>
+                </ul>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+    
+            <!-- Project 5: IoT Project -->
+            <div class="project">
+                <img src="project5.jpg" alt="IoT Project">
+                <h3>SmartHome</h3>
+                <p>Designed and developed an IoT-based smart home system.</p>
+                <ul>
+                    <li>Arduino</li>
+                    <li>Raspberry Pi</li>
+                    <li>Python</li>
+                    <li>C++</li>
+                    <li>Wi-Fi</li>
+                    <li>Bluetooth</li>
+                </ul>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+    
+            <!-- Project 6: Machine Learning Project -->
+            <div class="project">
+                <img src="project6.jpg" alt="Machine Learning Project">
+                <h3>ImageClassifier</h3>
+                <p>Developed a machine learning-based image classification system.</p>
+                <ul>
+                    <li>Python</li>
+                    <li>TensorFlow</li>
+                    <li>Keras</li>
+                    <li>OpenCV</li>
+                    <li>NumPy</li>
+                </ul>
+                <a href="#" target="_blank">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a team of passionate developers, designers, and innovators dedicated to creating cutting-edge digital solutions.</p>
+    </section>
+
+    <!-- Contact Us Section -->
+
+    <section id="contact">
+        <h2>Get in Touch</h2> 
+        <form id="contact-form">
+            <label>Name:</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+        
+            <label>Email:</label>
+            <input type="email" id="email" placeholder="your@email.com" required>
+        
+            <label>Message:</label>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+        
+            <button type="submit">Send</button>
+          </form>
+        <div id="form-status"></div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 Tevroc Trading. All Rights Reserved.</p>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
