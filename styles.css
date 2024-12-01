@@ -222,7 +222,9 @@ nav a.active {
 .tags li:hover {
   background-color: #3e8e41;
 }
-
+.screenshot{
+  width:80%;
+  max-width:80%;
 screenshots {
   display: flex;
   flex-wrap: wrap;
