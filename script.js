@@ -1,5 +1,5 @@
 
-// Get form element
+// Get form elements
 const form = document.getElementById('contact-form');
 
 // Add event listener to form submission
