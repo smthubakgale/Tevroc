@@ -1,4 +1,6 @@
-
+(function() {
+    emailjs.init('OiMEAcHFuztUoVBi0');
+  })();
 // Get form elements
 const form = document.getElementById('contact-form');
 const formStatus = document.getElementById('form-status');
@@ -26,7 +28,7 @@ form.addEventListener('submit', (e) => {
             formStatus.innerHTML = 'Error sending message. Please try again.';
         });
 
-*/
+
 /*
 (function() {
     emailjs.init('OiMEAcHFuztUoVBi0');
