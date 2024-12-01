@@ -7,6 +7,21 @@
 const form = document.getElementById('contact-form');
 const formStatus = document.getElementById('form-status');
 
+document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault();
+    // these IDs from the previous steps
+    emailjs.sendForm('contact_service', 'contact_form', this)
+        .then(() => {
+            console.log('SUCCESS!');
+            formStatus.innerHTML = 'Message sent successfully!';
+            form.reset();
+        }, (error) => {
+            console.log('FAILED...', error);
+            formStatus.innerHTML = 'Error sending message. Please try again.';
+        });
+});
+
+/*
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -34,3 +49,4 @@ form.addEventListener('submit', (e) => {
             formStatus.innerHTML = 'Error sending message. Please try again.';
         });
 });
+*/
