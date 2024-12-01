@@ -16,12 +16,12 @@ body {
 /* Navigation */
 
 .top-nav {
-    background-color: #ffa07a;
-    padding: 1em;
-    text-align: center;
     position: sticky;
     top: 0;
     z-index: 1000;
+    background-color: #ffa07a;
+    padding: 1em;
+    text-align: center;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -51,12 +51,14 @@ body {
 /* Aside */
 
 .side-nav {
+    position: relative;
+    z-index: 900;
     background-color: #f9f9f9;
     padding: 1em;
     overflow-y: auto;
     box-shadow: none;
-    z-index: 0;
     width: 100%;
+    margin-top: 60px; /* adjust to top-nav height */
 }
 
 .side-nav .docs-nav {
@@ -238,11 +240,11 @@ pre code {
         display: none;
     }
 
-    .side-nav {
+        .side-nav {
         display: none;
     }
 
-        .main-content {
+    .main-content {
         margin-left: 0;
         padding: 0;
     }
