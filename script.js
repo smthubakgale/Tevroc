@@ -1,6 +1,7 @@
 
 // Get form elements
 const form = document.getElementById('contact-form');
+const formStatus = document.getElementById('form-status');
 
 // Add event listener to form submission
 form.addEventListener('submit', (e) => {
@@ -16,14 +17,14 @@ form.addEventListener('submit', (e) => {
     message: "hello sammy",
     from_email: "mabalane.thubakgale@gmail.com",
     reply_to: "mabalane.thubakgale@gmail.com",
-}).then((response) => {
-    console.log('Email sent successfully', response.status);
-    alert('Email sent successfully!');
-  }, (error) => {
-    console.log('Error sending email', error);
-    alert('Error sending email. Please try again.');
-  });
-});
+}).then(() => {
+            console.log('SUCCESS!');
+            formStatus.innerHTML = 'Message sent successfully!';
+            form.reset();
+        }, (error) => {
+            console.log('FAILED...', error);
+            formStatus.innerHTML = 'Error sending message. Please try again.';
+        });
 
 */
 /*
