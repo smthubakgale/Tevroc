@@ -444,6 +444,10 @@ a:hover {
   color: #23527c;
 }
 
+img{
+  max-width:100%;
+  height:auto;
+}
 /* Button Styles */
 
 .button {
