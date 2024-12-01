@@ -15,10 +15,10 @@ form.addEventListener('submit', (e) => {
   const message = document.getElementById('message').value;
 
   emailjs.send("service_44zo6pj","template_m3vjj5x",{
-    from_name: "sam",
-    message: "hello sammy",
-    from_email: "mabalane.thubakgale@gmail.com",
-    reply_to: "mabalane.thubakgale@gmail.com",
+    from_name: name ,
+    message: message ,
+    from_email: email ,
+    reply_to: email,
     }).then(() => {
                 console.log('SUCCESS!');
                 formStatus.innerHTML = 'Message sent successfully!';
