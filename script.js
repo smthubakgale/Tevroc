@@ -1,9 +1,4 @@
 
-
-// Initialize EmailJS with public key 
-const serviceId = 'service_44zo6pj';
-const templateId = 'template_m3vjj5x';
-
 // Get form element
 const form = document.getElementById('contact-form');
 
@@ -16,20 +11,12 @@ form.addEventListener('submit', (e) => {
   const email = document.getElementById('email').value;
   const message = document.getElementById('message').value;
 
-  // Create template parameters
-  const templateParams = {
-    from_name: name ,
-    message: message ,
-    from_email: email ,
-    reply_to: email 
-  }; 
-  
-  // Send email using EmailJS
-  emailjs.send( 
-    serviceId,
-    templateId,
-    templateParams
-  ).then((response) => {
+  emailjs.send("service_44zo6pj","template_m3vjj5x",{
+    from_name: "sam",
+    message: "hello sammy",
+    from_email: "mabalane.thubakgale@gmail.com",
+    reply_to: "mabalane.thubakgale@gmail.com",
+}).then((response) => {
     console.log('Email sent successfully', response.status);
     alert('Email sent successfully!');
   }, (error) => {
