@@ -1,4 +1,6 @@
-// Initialize EmailJS with public key
+
+
+/*// Initialize EmailJS with public key
 const publicKey = 'OiMEAcHFuztUoVBi0';
 const serviceId = 'service_44zo6pj';
 const templateId = 'template_m3vjj5x';
@@ -37,7 +39,8 @@ form.addEventListener('submit', (e) => {
   });
 });
 
-/*
+*/
+
 (function() {
     emailjs.init('OiMEAcHFuztUoVBi0');
   })();
