@@ -103,6 +103,27 @@ nav a.active {
   border-bottom: 2px solid #ccc;
 }
 
+.discover-button {
+  background-color: #4CAF50; /* Green background */
+  color: #fff; /* White text */
+  padding: 10px 20px; /* Larger padding */
+  border: none; /* No border */
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+  font-size: 16px; /* Larger font size */
+  font-weight: bold; /* Bold font */
+}
+
+.discover-button:hover {
+  background-color: #3e8e41; /* Darker green on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow on hover */
+}
+
+.discover-button:focus {
+  outline: none; /* Remove outline on focus */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Box shadow on focus */
+}
+
 /* About Section */
 
 #about {
