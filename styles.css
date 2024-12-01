@@ -137,11 +137,6 @@ nav a.active {
 
 /* Portfolio Section */
 
-#portfolio {
-  padding: 100px;
-  background-color: white; /* Bright cobalt *
-}
-
 #portfolio h2 {
   margin-top: 0;
   color: #2f4f7f; /* Blueish text color */
@@ -384,7 +379,7 @@ nav {
 }
 
 #portfolio {
-  background-color: var(--secondary-color);
+  background-color: white;
 }
 
 #contact {
